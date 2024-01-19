@@ -1,0 +1,243 @@
+*, *::after, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color-gradient: linear-gradient(130deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* header navigation and footer*/
+header {
+    width: 100%;
+    background: var(--main-color-gradient);
+    opacity: 95%;
+}
+
+header > .container {
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.title {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.847em;
+}
+
+.logo {
+    height: 23px;
+}
+
+nav {
+    display: flex;
+    padding: 0;
+}
+
+#home, #about {
+    padding-left: 3.25rem;
+    color: black;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-align: right;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+nav p:hover {
+    
+    transform: translateX(-6px);
+    transition: transform .3s;
+}
+
+footer {
+    text-align: center;
+    background-color: #202020;
+    color: white;
+    padding: 2.3em 0;
+    margin: 2.7em auto 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* lay-out, controllers and divisions */
+.container {
+    max-width: 850px;
+    margin: 0  auto;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0  auto;
+}
+
+.recent-posts{
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.viewMore-button {
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Featuring post */
+.hero-post {
+    background: url('/imgs/article-image-hero.png') black;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    cursor: pointer;
+    min-height: 45vw;
+}
+
+.hero-post-date {
+    font-size: 0.75rem;
+}
+
+.hero-post-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.125;
+}
+
+.hero-post-desc {
+    font-size: 1rem;
+    margin-bottom: -1rem;
+    line-height: 1.25;
+}
+
+.hero-post article {
+    margin-top: 87px;
+}
+
+/* Section and other articles */
+.article-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+article {
+    margin: 2.125rem 1.25rem;
+}
+article p, article h2 {
+    margin: 0.56rem 0;
+}
+
+article img {
+    width: 100%;
+}
+
+/* About me */
+.author-pic-wrapper{
+    content: '';
+    background: var(--main-color-gradient);
+    position: relative;
+    height: 300px;
+    margin-right: 30%;
+    border-radius: 50px;
+    z-index: -1;
+}
+
+.author-pic-wrapper::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: 100%;
+    background-image: url('/imgs/avatar.JPG');
+    border-radius: 50px;
+}
+
+.author-pic {
+    size: 90%;
+    width: 182px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px gray;
+    margin-left: .5rem;
+}
+
+.colorful {
+    background: var(--main-color-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0.01);
+}
+
+/* Media queries */
+@media (min-width: 500px) {
+    
+    
+    .hero-post {
+    background: black url(/imgs/blog-image-hero.jpg);
+    background-size: cover;
+    background-position: top;
+    }
+    
+    .hero-post-desc {
+        max-width: 80%;
+        margin-bottom: .75rem;
+    }
+    
+    .author-pic-wrapper {
+        margin-right: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    nav {
+        padding: .75rem 0;
+    }
+    
+    .hero-post-desc {
+        max-width: 60%;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-post {
+        min-height: 35vw;
+    }
+    
+    .hero-post-title {
+    font-size: 2.5rem;
+    }
+
+    .article-listing .hide {
+        display: grid!important; 
+    }
+    
+    .author-pic-wrapper {
+        margin-right: 70%;
+    }
+}
