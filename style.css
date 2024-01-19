@@ -105,7 +105,7 @@ footer p {
 
 /* Featuring post */
 .hero-post {
-    background: url('/imgs/article-image-hero.png') black;
+    background: url('/images/article-image-hero.png') black;
     background-size: cover;
     background-position: top;
     color: white;
@@ -175,7 +175,7 @@ article img {
     opacity: 0.8;
     background-size: cover;
     background-position: 100%;
-    background-image: url('/imgs/avatar.JPG');
+    background-image: url('/images/avatar.JPG');
     border-radius: 50px;
 }
 
