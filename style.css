@@ -31,9 +31,13 @@ header > .container {
     display: flex;
     gap: 5px;
     align-items: center;
+    
+}
+
+.title h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 0.847em;
+    font-size: 0.847rem;
 }
 
 .logo {
@@ -43,6 +47,11 @@ header > .container {
 nav {
     display: flex;
     padding: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: unset;
 }
 
 #home, #about {

@@ -13,11 +13,11 @@
             <div class="container">
                 <div class="title">
                     <img class="logo" src="images/logo.png" alt="site-logo">
-                    <p>My learning journal</p>
+                    <h1>My learning journal</h1>
                 </div>
                 <nav>
-                    <p id="home"><a href="./index.html">HOME</a></p>
-                    <p id="about"><a href="./about.html">ABOUT ME</a></p>
+                    <p id="home"><a class="nav-link" href="./index.html">HOME</a></p>
+                    <p id="about"><a class="nav-link" href="./about.html">ABOUT ME</a></p>
                 </nav>
             </div>
         </header>
@@ -30,6 +30,113 @@
                     <p class="hero-post-desc">After one month of learning in Scrimba's Frontend Developer Career Path, I've decided to embark on a Chingu voyage to learn soft skills, develop my communication skills and meet like-minded peers.</p>
                 </article>
             </section>
-        </main>
+        
+            <section id="header-handle" class="header-handle hide">
+                <div class="container">
+                    <div class="main-post-title">
+                        <p class="post-date">JANUARY 16, 2024</p>
+                        <h2 class="post-title">In January I started my new journey: a Chingu voyage.</h2>
+                    </div>
+                    <p class="post-desc">After one month of learning in Scriba's Frontend Developer Career Path, I've decided to embark on a Chingu voyage to learn soft skills, develop my communication skills and meet like-minded peers.</p>
+                    
+                    <img id="header-handle-img" 
+                    src="images/blog-image-hero.jpg" 
+                    alt="A laptop on a desktop at sunset">
+                    
+                    <p><b>How I stay committed to learning</b><br><br>
 
+                    I always liked to learn things by myself and while learning to play guittar in high school and learning to surfing and standing by myself in the middle of the raging waves, learning to code alone can be even more chalenging and sometimes very frustrating.<br><br>
+
+                    While Scrimba courses are fun and very helpful, I felt like it would be also interesting to code together with other students that come different backgrounds and have different skills.<br><br>
+
+                    <b>How I got started</b><br><br>
+                    
+                    Chingu Voyages are 6-week long remote team projects where designed to help students put technical knowledge they've gained into practice as well as improve skills like teamwork, collaboration, and project management.<br><br>
+
+                    To embark in a Chingu voyage first we need to complete a solo project. I did HTML, CSS and JavaScript for a trivia. The only thing set were the questions. I wrote the code on VSCode, pushed it to Github using Github desktop and wrote a comprehensive 'Read Me' file.<br><br>
+                    
+                    <img id="trivia-img" 
+                    src="images/1st-question-trivia.png" 
+                    alt="A laptop on a desktop at sunset">
+
+                    That helped me get a bit more familiar with the real workflow, out of friendly Scrimba platform I had to figure out why my 'console.log' would not work and testing got complicated.<br><br> 
+                    
+                    I also struggled with an CSS and JS animation. I wanted questions to disappear to the left and arrive from the right. I don't if this is the right way but I just made it disappear to the left, stay hidden and transition all the way to the right and then come back to the center. In the end my fingers were swetting and there was smoke coming out of my keyboard... <br><br>
+                    </p>
+                    <p class="recent-posts">Recent posts</p>
+                </div>
+
+            </section>
+        </main>
+        <div class="section-container">
+        <section class="article-listing">
+            <article>
+                <div class="container">
+                    <img src="images/article-image-01.jpg" alt="A message in a computer">
+                    <p class="post-date">JANUARY 16, 2024</p>
+                    <h1 class="post-title">First lines of code</h1>
+                    <p class="post-desc">The project's skeleton is coming out. We need to use a CSS grid to render a JSON file used as an exemple of different tasks and acitivities in order to create an app that helps people organize their time.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="container">
+                    <img src="images/article-image-02.jpg" alt="A lamp representing an idea">
+                    <p class="post-date">JANUARY 13, 2024</p>
+                    <h1 class="post-title">New ideas</h1>
+                    <p class="post-desc">The kickoff meeting is nailed and now we have some fresh new ideas to work on during the next few days and maybe start coding</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="container">
+                    <img src="images/article-image-03.jpg" alt="A coder's laptop">
+                    <p class="post-date">JANUARY 9, 2024</p>
+                    <h1 class="post-title">Fresh Start</h1>
+                    <p class="post-desc">I'm excited to start coding. But first we need to set a few documents up. The team has a Product Owner who is going to be in charge of writing the backlog, our bible. The UI/UX designer is going to make a first wireframe but first we need to find a date for the Kickoff meeting and this not going to be so easy.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="container">
+                    <img src="images/article-image-04.jpg" alt="A coder's laptop">
+                    <p class="post-date">JULY 23, 2022</p>
+                    <h1 class="post-title">Blog four</h1>
+                    <p class="post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="container">
+                    <img src="images/article-image-05.jpg" alt="A coder's laptop">
+                    <p class="post-date">JULY 23, 2022</p>
+                    <h1 class="post-title">Blog five</h1>
+                    <p class="post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                </div>
+            </article>
+            
+            <article>
+                <div class="container">
+                    <img src="images/article-image-06.jpg" alt="A coder's laptop">
+                    <p class="post-date">JULY 23, 2022</p>
+                    <h1 class="post-title">Blog six</h1>
+                    <p class="post-desc">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                </div>
+            </article>
+        </section>
+        </div>
+        
+        <div class="viewMore container hide">
+            <p class="viewMore-button">View More</p>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <p>My Learning Journal</p>
+                <p>Copyright ©2022</p>
+            </div>
+        </footer>
+        
+        <script src="./index.js"></script>
     </body>
+</html>
