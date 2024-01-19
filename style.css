@@ -38,6 +38,7 @@ header > .container {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 0.847rem;
+    cursor: default;
 }
 
 .logo {
