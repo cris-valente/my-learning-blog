@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans 3', sans-serif;
+    color: #151515;
 }
 
 /* header navigation and footer*/
@@ -57,7 +58,7 @@ nav {
 
 #home, #about {
     padding-left: 3.25rem;
-    color: black;
+    color: #151515;
     font-weight: 600;
     font-size: 0.75rem;
     text-align: right;
@@ -76,8 +77,8 @@ footer {
     text-align: center;
     background-color: #202020;
     color: white;
-    padding: 2.3em 0;
-    margin: 2.7em auto 0;
+    padding: 2.1rem 0;
+    margin: 2.7rem auto 0;
 }
 
 footer p {
@@ -102,7 +103,7 @@ footer p {
     font-weight: 700;
 }
 
-.viewMore-button {
+.viewMoreButton {
     text-align: center;
     font-weight: 700;
     text-decoration: underline;
@@ -111,6 +112,19 @@ footer p {
 
 .hide {
     display: none !important;
+}
+
+.load-more-article {
+    display: none;
+}
+  
+.load-more {
+    display: block;
+}
+
+.link{
+    font-weight: 700;
+    color: #151515;
 }
 
 /* Featuring post */
@@ -144,6 +158,21 @@ footer p {
 
 .hero-post article {
     margin-top: 87px;
+}
+
+.post-img{
+    width: 100%;
+    display: block;
+}
+
+.img-container{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.header-handle > .container {
+    width: 90%;
 }
 
 /* Section and other articles */
@@ -229,6 +258,14 @@ article img {
     nav {
         padding: .75rem 0;
     }
+
+    nav a {
+        font-size: 1.125rem; 
+    }
+
+    .title h1{
+        font-size: 1.25rem;
+    }
     
     .hero-post-desc {
         max-width: 60%;
@@ -238,9 +275,21 @@ article img {
     .hero-post {
         min-height: 35vw;
     }
+    .hero-post > article{
+        margin: 0 4rem 2rem 4rem;
+    }
     
     .hero-post-title {
-    font-size: 2.5rem;
+        font-size: 3rem;
+    }
+
+    .hero-post-date {
+        font-size: 1.125rem;
+    }
+
+    .hero-post-desc {
+        margin-top: 1rem;
+        font-size: 1.5rem;
     }
 
     .article-listing .hide {
