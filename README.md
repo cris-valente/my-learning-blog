@@ -11,3 +11,5 @@ It has a viewmore button that hides or shows articles.
 
 ## Next steps
 It would be nice to find a way to render all articles using a JSON file to store all data and accessing it to render featured article. And also render a different page with each article and its content.
+
+* Live link : https://cris-my-learning-journal.netlify.app/
