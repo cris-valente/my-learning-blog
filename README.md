@@ -15,3 +15,5 @@ It would be nice to find a way to render all articles using a JSON file to store
 Live link : https://cris-my-learning-journal.netlify.app/
 
 ## Preview
+![image](images/my-blog-desktop.png)
+![image](images/my-blog-mobile.png)
